@@ -1,20 +1,44 @@
 import React from "react";
 import SliderComponent from "./common/SliderComponent";
-import { Typography } from "@mui/material";
+
 
 const SliderSelect = () => {
   return (
     <>
-    <Typography variant = "subtitle2">Home Value</Typography>
-    <Typography variant = "h5">$ 3000</Typography>
+    
       <SliderComponent
+      label="Home Value"
         min={0}
         max={50}
         defaultValue={20}
         step={10}
         onChange={(e)=>console.log(e.target.value)}
+        unit = '$'
+        amount={3000}
       ></SliderComponent>
-      <Typography></Typography>
+
+<SliderComponent
+      label="Down Payment"
+        min={0}
+        max={50}
+        defaultValue={20}
+        step={10}
+        onChange={(e)=>console.log(e.target.value)}
+        unit = '$'
+        amount={500}
+      ></SliderComponent>
+
+<SliderComponent
+      label="Loan Amount"
+        min={0}
+        max={50}
+        defaultValue={20}
+        step={10}
+        onChange={(e)=>console.log(e.target.value)}
+        unit = '$'
+        amount={700}
+      ></SliderComponent>
+      
     </>
   );
 };
