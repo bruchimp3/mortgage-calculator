@@ -12,6 +12,7 @@ function App() {
     downPayment:3000,
     loanAmount:3000,
     loanTerm:3000,
+    interestRate:5
   })
 
 
