@@ -9,8 +9,8 @@ import TenureSelect from "./components/TenureSelect";
 function App() {
   const[data,setData] = useState({
     homeValue:3000,
-    downPayment:3000,
-    loanAmount:3000,
+    downPayment:0.2*3000,
+    loanAmount:0.8 * 3000,
     loanTerm:3000,
     interestRate:5
   })
