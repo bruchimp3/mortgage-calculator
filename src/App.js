@@ -21,13 +21,13 @@ function App() {
     <div className="App">
       <Navbar />
       <Container maxWidth="lg" sx={{ marginTop: 4 }}>
-        <Grid container spacing = {5}>
+        <Grid container spacing = {5} alignItems='center'>
           <Grid item xs={12} md={6}>
             <SliderSelect data={data} setData={setData} />
             <TenureSelect data={data} setData={setData}/>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Result />
+            <Result data={data} />
           </Grid>
         </Grid>
       </Container>
